@@ -1,0 +1,58 @@
+@import "vars";
+@import "mixins";
+
+header {
+    height: 105px;
+
+    @include flex();
+    a {
+        &.logo {
+            font-size: px-to-rem(32);
+            line-height: 105px;
+
+            @include text-color($clr-logo-font);
+            @include text-decoration(none);
+        }
+    }
+
+    .primary {
+        margin-left: 349px;
+        ul {
+            list-style-type: none;
+            @include flex();
+        }
+
+        li {
+            margin-left: 50px;
+
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+        }
+        a {
+            line-height: 105px;
+            font-family: $base-font-family;
+
+            font-size: px-to-rem(18);
+
+            text-transform: capitalize;
+
+            @include text-decoration(none);
+            @include text-color($clr-link-text);
+        }
+    }
+
+    .secondary {
+        margin-left: auto;
+        margin-top: 38px;
+        ul {
+            list-style-type: none;
+            @include flex();
+        }
+
+        li {
+            margin-left: 30px;
+            line-height: 105px;
+        }
+    }
+}
