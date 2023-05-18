@@ -1,0 +1,20 @@
+@function px-to-rem($px) {
+    $result: calc($px / 16) * 1rem;
+    @return $result;
+}
+
+@mixin text-color($color) {
+    color: $color;
+}
+
+@mixin text-decoration($selection) {
+    text-decoration: $selection;
+}
+@mixin flex() {
+    display: flex;
+}
+
+@mixin size($w, $h) {
+    width: px-to-rem($w);
+    height: px-to-rem($h);
+}
