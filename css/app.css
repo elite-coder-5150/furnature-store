@@ -48,9 +48,110 @@ header .secondary li {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.contact-info {
+  background: #265E55;
+  padding: 24px;
+}
+.contact-info .contact-info-list {
+  list-style-type: none;
+  display: flex;
+}
+.contact-info .contact-info-list li {
+  display: flex;
+  color: #F8DFB6;
+  font-size: 0.875rem;
+  line-height: 40px;
+  margin-right: 40px;
+}
+.contact-info .contact-info-list li .icon {
+  margin-top: 10px;
+}
+.contact-info .contact-info-list li:last-child {
+  margin-right: 0;
+}
+.contact-info .social-list {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.contact-info .social-list .social-link {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #F8DFB6;
+}
+.contact-info .social-list .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #F8DFB6;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase {
+  display: flex;
+  padding: 100px 0;
+}
+.showcase .section-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+}
+.showcase .description {
+  width: 526px;
+  font-family: "Poppins", sans-serif;
+  line-height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #8F8F8F;
+}
+.showcase button {
+  padding: 12px 24px;
+  background: #fff;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.showcase .ratings {
+  display: flex;
+  margin-top: 50px;
+}
+.showcase .user-list {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+}
+.showcase .user-list li {
+  margin-left: -15px;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.showcase .user-list li.blank {
+  background: #265E55;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+.showcase .right {
+  margin-left: auto;
+}
+
+.icon {
+  margin-right: 10px;
 }
 
 .search-icon {
@@ -69,4 +170,44 @@ header .secondary li {
   background: url("../img/cart-icon.svg") no-repeat;
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.email-icon {
+  background: url("../img/email-icon.svg") no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.phone-icon {
+  background: url("../img/phone-icon.svg") no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.instagram-icon {
+  background: url("../img/instagram-icon.svg") center center no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.twitter-icon {
+  background: url("../img/twitter-icon.svg") center center no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.tiktok-icon {
+  background: url("../img/tiktok-icon.svg") center center no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.rating-icon {
+  background: url("../img/star-icon.png") center center no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+body {
+  background: #fafafa;
 }
