@@ -1,0 +1,48 @@
+@import "vars";
+@import "mixins";
+.contact-info {
+    background: $clr-contact-info;
+
+    padding: 24px;
+    //@include flex();
+    .contact-info-list {
+        list-style-type: none;
+        @include flex();
+
+        li {
+            @include flex();
+            @include text-color($clr-contact-info-text);
+            @include text-size(14);
+            line-height: 40px;
+            margin-right: 40px;
+            .icon {
+                margin-top: 10px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .social-list {
+        //margin-left: auto;
+        @include flex();
+        list-style: none;
+        margin-left: auto;
+
+        .social-link {
+            @include size(40, 40);
+            background: $clr-contact-social;
+        }
+
+        .icon {
+            @include size(40, 40);
+            background: $clr-contact-social;
+            border-radius: 20px;
+
+            @include flex();
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
