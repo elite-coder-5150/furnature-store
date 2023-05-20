@@ -1,0 +1,58 @@
+@import "mixins";
+@import "vars";
+
+.showcase {
+    @include flex();
+    padding: 100px 0;
+    .section-title {
+        font-family: "Josefin Sans", sans-serif;
+        @include text-size(48);
+    }
+
+    .description {
+        width: 526px;
+        font-family: $base-font-family;
+        line-height: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @include text-size(16);
+        @include text-color($clr-description);
+
+    }
+
+    button {
+        padding: 12px 24px;
+        background: #fff;
+        text-transform: capitalize;
+        @include text-size(16)
+    }
+
+    .ratings {
+        @include flex();
+        margin-top: 50px;
+    }
+
+    .user-list {
+        list-style: none;
+        @include flex();
+        margin-top: 20px;
+        li {
+            margin-left: -15px;
+            @include size(50, 50);
+
+            &.blank {
+                background: #265E55;
+                border-radius: 25px;
+
+                @include text-color(#fff);
+
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+    }
+    .right {
+        margin-left: auto;
+    }
+}
