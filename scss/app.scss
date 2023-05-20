@@ -1,5 +1,11 @@
 @import "partials/vars";
 @import "partials/header";
 @import "partials/base";
+@import "partials/contact-info";
+@import "partials/showcase";
+
 @import "icons";
 
+body {
+    background: #fafafa;
+}
