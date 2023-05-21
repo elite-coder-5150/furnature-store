@@ -1,0 +1,26 @@
+@import "mixins";
+
+.meet-the-team {
+    text-align: center;
+
+    .section-title {
+        font-family: "Poppins", sans-serif;
+        @include text-size(48);
+    }
+
+    .team-members {
+        @include flex();
+        justify-content: space-evenly;
+
+        .info {
+            .position {
+                text-transform: capitalize;
+            }
+
+            .member-name {
+                font-family: "Josefin Sans", sans-serif;
+                @include text-size(24);
+            }
+        }
+    }
+}
