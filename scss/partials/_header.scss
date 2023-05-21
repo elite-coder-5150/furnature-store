@@ -3,8 +3,8 @@
 
 header {
     height: 105px;
-
     @include flex();
+
     a {
         &.logo {
             font-size: px-to-rem(32);
