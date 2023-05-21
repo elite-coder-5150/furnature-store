@@ -1,6 +1,7 @@
 @import "mixins";
 @import "vars";
 
+/***** 004 showcase styles *****/
 .showcase {
     @include flex();
     padding: 100px 0;

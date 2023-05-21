@@ -1,13 +1,21 @@
 @import "mixins";
+@import "vars";
 
+/***** 006 meet the team styles *****/
 .meet-the-team {
     text-align: center;
 
     .section-title {
-        font-family: "Poppins", sans-serif;
+        font-family: "Josefin Sans", sans-serif;
         @include text-size(48);
     }
 
+    p {
+        @include text-color($clr-description);
+
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
     .team-members {
         @include flex();
         justify-content: space-evenly;
@@ -15,11 +23,15 @@
         .info {
             .position {
                 text-transform: capitalize;
+                margin-top: 10px;
+
+                @include text-size(18);
             }
 
             .member-name {
                 font-family: "Josefin Sans", sans-serif;
-                @include text-size(24);
+                margin-top: 30px;
+                @include text-size(32);
             }
         }
     }

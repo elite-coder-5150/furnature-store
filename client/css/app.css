@@ -66,9 +66,6 @@ body {
   height: 70px;
   display: flex;
 }
-.contact-info .left {
-  width: 40%;
-}
 .contact-info .contact-info-list {
   display: flex;
   max-width: 40%;

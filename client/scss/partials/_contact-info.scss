@@ -1,55 +1,15 @@
-//@import "vars";
-//@import "mixins";
-//.contact-info {
-//    background: $clr-contact-info;
-//    width: 100%;
-//    height: 70px;
-//    .left {
-//        @include flex();
-//        .contact-info-list {
-//            @include flex();
-//        }
-//
-//        width: 40%;
-//
-//        li {
-//            @include flex();
-//            @include text-color($clr-contact-info-text);
-//
-//            margin-right: 30px;
-//            line-height: 70px - 2px;
-//
-//            .icon {
-//                margin-top: 20px;
-//            }
-//        }
-//    }
-//
-//    .right {
-//        @include flex();
-//        width: 60%;
-//        margin-left: auto;
-//        border: 3px solid #f00;
-//    }
-//}
 
 @import "vars";
 @import "mixins";
 
+/***** 003 Contact info styles *****/
 .contact-info {
     background: $clr-contact-info;
     width: 100%;
     height: 70px;
 
     @include flex();
-    //display: flex; /* Add flex display to the container */
 
-    .left {
-        //@include flex();
-        width: 40%;
-
-
-    }
     .contact-info-list {
         @include flex();
         max-width: 40%;

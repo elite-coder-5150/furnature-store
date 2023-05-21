@@ -1,6 +1,7 @@
 @import "vars";
 @import "mixins";
 
+/***** 001 header styles *****/
 header {
     height: 105px;
     @include flex();

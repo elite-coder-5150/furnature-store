@@ -6,7 +6,9 @@
 @mixin text-color($color) {
     color: $color;
 }
-
+@mixin text-size($size) {
+    font-size: px-to-rem($size);
+}
 @mixin text-decoration($selection) {
     text-decoration: $selection;
 }
