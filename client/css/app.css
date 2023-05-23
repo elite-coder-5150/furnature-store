@@ -183,61 +183,66 @@ a.social-link {
   font-size: 2rem;
 }
 
+.interior-modern {
+  background: #F8f8f8;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 /***** 008 icon styles *****/
 .icon {
   margin-right: 10px;
 }
 
 .search-icon {
-  background: url("../img/search-icon.svg") no-repeat;
+  background: url("img-icon.svg") no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .profile-icon {
-  background: url("../img/profile-icon.svg") no-repeat;
+  background: url("imge-icon.svg") no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .cart-icon {
-  background: url("../img/cart-icon.svg") no-repeat;
+  background: url("imgcon.svg") no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .email-icon {
-  background: url("../img/email-icon.svg") no-repeat;
+  background: url("imgicon.svg") no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .phone-icon {
-  background: url("../img/phone-icon.svg") no-repeat;
+  background: url("imgicon.svg") no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .instagram-icon {
-  background: url("../img/instagram-icon.svg") center center no-repeat;
+  background: url("imgram-icon.svg") center center no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .twitter-icon {
-  background: url("../img/twitter-icon.svg") center center no-repeat;
+  background: url("imgr-icon.svg") center center no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .tiktok-icon {
-  background: url("../img/tiktok-icon.svg") center center no-repeat;
+  background: url("img-icon.svg") center center no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .rating-icon {
-  background: url("../img/star-icon.png") center center no-repeat;
+  background: url("imgcon.png") center center no-repeat;
   width: 1.5rem;
   height: 1.5rem;
 }
