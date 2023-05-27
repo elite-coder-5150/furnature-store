@@ -1,0 +1,42 @@
+@import "mixins";
+
+.testimonials {
+    text-align: center;
+    padding-top: 100px;
+    .section-title {
+        @include text-size(40);
+        text-transform: capitalize;
+
+    }
+
+    .testimonials-list {
+        @include flex();
+        @include unstyled-list();
+        @include flex-center();
+
+        margin-top: 80px;
+
+        .title {
+            @include text-size(20);
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .description {
+            @include text-size(14);
+            //margin-bottom: 20px;
+            text-align: left
+        }
+
+        li {
+            @include unstyled-list();
+            max-width: 364px;
+            margin-right: 46px;
+        }
+    }
+
+    .meta {
+        text-align: left;;
+    }
+}
