@@ -1,0 +1,1 @@
+const mysql=require("mysql2"),express=require("express"),app=express(),db=mysql.createConnection({host:"localhost",user:"root",password:"root",database:"furniture_shop"});module.exports=db;
