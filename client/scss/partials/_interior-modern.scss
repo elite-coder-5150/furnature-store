@@ -1,0 +1,39 @@
+@import "mixins";
+@import "vars";
+.interior-modern {
+    @include vertical-padding(20);
+    background: $clr-interior-modern;
+    margin-top: 115px;
+    @include flex();
+
+    @include border(1,  darken($clr-interior-modern, 15%));
+    .left {
+        padding-left: 75px;
+        padding-top: 62px;
+
+        .sub-title {
+            text-transform: capitalize;
+        }
+
+        .section-title {
+            @include text-size(40);
+        }
+
+        .shop-now-btn {
+            padding: 15px 60px;
+            margin-top: 30px;
+            @include text-size(18);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right {
+        margin-left: auto;
+        margin-top: -90px;
+        margin-right: 0;
+        width: 38%;
+    }
+}
