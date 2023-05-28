@@ -35,7 +35,8 @@
         margin-top: 15px;
         li {
             margin-right: 20px;
-
+            @include flex();
+            width: 100%;
             .icon {
                 background: $clr-contact-social;
                 @include size(40, 40);
