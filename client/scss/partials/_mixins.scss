@@ -1,3 +1,5 @@
+@import "vars";
+
 @function px-to-rem($px) {
     $result: calc($px / 16) * 1rem;
     @return $result;
@@ -19,4 +21,182 @@
 @mixin size($w, $h) {
     width: px-to-rem($w);
     height: px-to-rem($h);
+}
+
+@mixin bg-color($color) {
+    background: $color;
+}
+
+@mixin vertical-padding($v) {
+    padding-top: px-to-rem($v);
+    padding-bottom: px-to-rem($v);
+}
+
+@mixin horizontal-padding($h) {
+    padding-left: px-to-rem($h);
+    padding-right: px-to-rem($h);
+}
+
+@mixin mobile {
+    @media(width <= #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(width <= #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(width <= #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media(width <= #{$large-desktop-width}) {
+        @content;
+    }
+}
+
+@mixin xl-desktop {
+    @media(width <= #{$extra-large-desktop-width}) {
+        @content;
+    }
+}
+
+@mixin xxl-desktop {
+    @media(width <= #{$extra-extra-large-desktop-width}) {
+        @content;
+    }
+}
+
+@mixin uhd-desktop {
+    @media(width <= #{$uhd-desktop}) {
+        @content;
+    }
+}
+
+@mixin border($size, $color) {
+    border: $size solid $color;
+}
+
+@mixin border-radius($radius) {
+    border-radius: px-to-rem($radius);
+}
+
+@mixin flex-direction($direction) {
+    flex-direction: $direction
+}
+
+@mixin margin-left($value) {
+    margin-left: px-to-rem($value);
+}
+
+@mixin margin-right($value) {
+    margin-right: px-to-rem($value);
+}
+
+@mixin margin-top($value) {
+    margin-top: px-to-rem($value);
+}
+
+@mixin margin-bottom($value) {
+    margin-bottom: px-to-rem($value);
+}
+
+@mixin margin-all($value) {
+    margin: px-to-rem($value);
+}
+
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
+
+@mixin height($value) {
+    height: px-to-rem($value);
+}
+
+@mixin width($value) {
+    width: px-to-rem($value);
+}
+
+@mixin flex-center() {
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin unstyled-list() {
+    list-style: none;
+}
+
+@mixin button-variant($bg-color, $border-color, $text-color, $border-radius: 0) {
+    @include bg-color($bg-color);
+    @include border(1px, $border-color);
+    @include border-radius($border-radius);
+    @include text-color($text-color);
+    @include text-size(16);
+}
+
+@mixin reset-link() {
+    text-decoration: none;
+}
+
+@mixin reset-body-styles {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin grid-container() {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+@mixin grid-column($columns) {
+    width: calc(#{$columns} / #{$column-count} * 100%);
+    float: left;
+    padding-left: calc($gutter-width / 2);
+    padding-right: calc($gutter-width / 2);
+}
+
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.grid-container {
+    @include grid-container();
+    @include clearfix();
+}
+
+// this algorithm creates the columns for the grid system
+@for $i from 1 through $column-count {
+    .col-#{$i} {
+        @include grid-column($i);
+    }
+}
+
+// q: what does the above code do?
+// 
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+@each $breakpoint, $width in breakpoints {
+    @media(min-width: $width) {
+        .grid-container {
+            max-width: $width;
+        }
+    }
 }
