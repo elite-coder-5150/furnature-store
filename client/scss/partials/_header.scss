@@ -3,57 +3,34 @@
 
 /***** 001 header styles *****/
 header {
-    height: 105px;
     @include flex();
+    //flex-direction: row;
 
-    a {
-        &.logo {
-            font-size: px-to-rem(32);
-            line-height: 105px;
+    ul {
+        @include flex();
 
-            @include text-color($clr-logo-font);
-            @include text-decoration(none);
-        }
-    }
+        @include unstyled-list();
 
-    .primary {
-        margin-left: 349px;
-        ul {
-            list-style-type: none;
-            @include flex();
-        }
-
-        li {
-            margin-left: 50px;
-
-            &:nth-child(1) {
-                margin-left: 0;
-            }
-        }
         a {
-            line-height: 105px;
-            font-family: $base-font-family;
+            @include reset-link();
+            @include text-size(18);
 
-            font-size: px-to-rem(18);
-
+            line-height: 35px;
             text-transform: capitalize;
 
-            @include text-decoration(none);
-            @include text-color($clr-link-text);
         }
     }
 
     .secondary {
         margin-left: auto;
-        margin-top: 38px;
-        ul {
-            list-style-type: none;
-            @include flex();
-        }
+    }
+    .logo {
+        font-family: $base-font-family;
+        text-decoration: none;
 
-        li {
-            margin-left: 30px;
-            line-height: 105px;
-        }
+        @include text-size(32);
+        @include text-color(#265E55);
+
+        font-weight: bold;
     }
 }
