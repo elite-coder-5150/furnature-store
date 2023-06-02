@@ -4,6 +4,22 @@
     @include flex();
 
     .copy-right {
+        @include text-size(14);
+        @include text-color($clr-copy-right);
+    }
 
+    .utility-links {
+        @include flex();
+        @include unstyled-list();
+
+        li {
+            margin-right: 20px;
+
+            a {
+                @include reset-link();
+                @include text-size(14);
+                @include text-color($clr-link-text);
+            }
+        }
     }
 }
