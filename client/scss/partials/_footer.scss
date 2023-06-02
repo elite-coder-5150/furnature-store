@@ -1,0 +1,66 @@
+@import "mixins";
+@import "vars";
+
+.main-footer {
+    @include flex();
+
+    .first-col {
+        @include size(417, 262);
+
+        .footer-logo {
+            .logo-link {
+                @include reset-link();
+                @include text-size(32);
+                @include text-color($clr-logo-font);
+            }
+        }
+
+        .description {
+            @include text-size(14);
+            @include text-color($clr-description);
+        }
+
+        .footer-social-list {
+            @include flex();
+            @include unstyled-list();
+
+            li {
+                margin-right: 20px;
+
+                a {
+                    @include reset-link();
+                }
+            }
+        }
+    }
+
+    .second-col,
+    .third-col {
+        @include size(84, 240);
+
+        ul {
+            @include flex();
+            @include flex-direction(column);
+            @include unstyled-list();
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    @include reset-link();
+                    @include text-size(14);
+                    @include text-color($clr-link-text);
+                }
+            }
+        }
+    }
+
+    .follow-us-col {
+        @include size(335, 385);
+
+        .img-grid {
+            @include flex();
+            @include unstyled-list();
+        }
+    }
+}
