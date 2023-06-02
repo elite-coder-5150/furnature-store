@@ -1,12 +1,17 @@
-@import "vars";
-@import "header";
-@import "base";
-@import "contact-info";
-@import "showcase";
-@import "meet-the-team";
+@import "partials/header";
+@import "partials/base";
+@import "partials/contact-info";
+@import "partials/showcase";
+@import "partials/meet-the-team";
+@import "partials/interior-modern";
+@import "partials/testimonials";
+@import "partials/tabbed";
+
+@import "partials/footer";
+@import "partials/post-footer";
 
 @import "icons";
 
 body {
-    background: #fafafa;
+    background: #fff;
 }
