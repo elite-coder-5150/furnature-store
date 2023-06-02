@@ -200,3 +200,15 @@ $breakpoints: (
         }
     }
 }
+
+// q: what does the above code do?
+// a: it creates a media query for each breakpoint and sets the max-width of the
+// grid container to the width of the breakpoint.
+
+@mixin pull-right() {
+    margin-left: auto;
+}
+
+@mixin pull-left() {
+    margin-right: auto;
+}
