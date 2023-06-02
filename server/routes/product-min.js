@@ -1,0 +1,1 @@
+import{express}from"express";const router=express.Route();import{ProductController}from"../controllers/products.controller";router.get("/product-suggestions",ProductController.productSuggestions);
