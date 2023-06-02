@@ -1,0 +1,9 @@
+@import "mixins";
+
+.post-footer {
+    @include flex();
+
+    .copy-right {
+
+    }
+}
