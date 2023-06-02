@@ -1,108 +1,48 @@
+interface Notification {
+    id: number;
+    message: string;
+    read: boolean;
+}
+
 // @ts-ignore
-import  db  from "../server";
+import db from "../server";
+
 export class NotificationsController {
-   async getAllNotifications(req, res) {
-       try {
-           const sql = "select * from notifications";
+    async createNotification(notification: Notification) {
 
-          db.query(sql, (error, results) => {
-              if (error) {
-                  console.error(error);
-                  res.status(500).send(error);
-              } else if (results.length === 0) {
-                  res.status(404).send("Notifications not found");
-              } else {
-                  res.status(200).send(results);
-              }
-          })
-       } catch (error) {
-           return res.status(500).send(error);
-       }
-   }
+        const query = "insert into notifications (notification_id, user_id, message, type, is_read, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?)";
+        const values = [notification.id, notification.message, notification.read];
 
-   async getNotification(req, res) {
-       try {
-           const { id } = req.params;
-           const sql = "select * from notifications where notification_id=?";
-
-           db.query(sql, [id], (error, results) => {
-               if (error) {
-                   console.error(error);
-                   res.status(500).send(error);
-               } else if (results.length === 0) {
-                   res.status(404).send("Notification not found");
-               } else {
-                     res.status(200).send(results[0]);
-               }
-           });
-       } catch (error) {
-           return res.status(500).send(error);
-       }
-   }
-
-   async createNotification(req, res) {
-       try {
-           const { title, type, description, date, user_id } = req.body;
-           const sql = "insert into notifications (notification_id, user_id, message, type, created_at, updated_at) values (null, ?, ?, ?, ?, ?)";
-
-           db.query(sql, [user_id, description, type, date, date], (error, results) => {
-               if (error) {
-                   console.error(error);
-                   res.status(500).send(error);
-               } else if (results.length === 0) {
-                   res.status(404).send("Notification not found");
-               } else {
-                   res.status(200).send(results[0]);
-               }
-           });
-       } catch (error) {
-           return res.status(500).send(error);
-       }
-   }
-
-    async updateNotification(req, res) {
-       try {
-            const { id } = req.params;
-            const { title, type, description, date, user_id } = req.body;
-            const sql = "update notifications set user_id=?, message=?, type=?, created_at=?, updated_at=? where notification_id=?";
-
-            db.query(sql, [user_id, description, type, date, date, id], (error, results) => {
-                if (error) {
-                     console.error(error);
-                    res.status(500).send(error);
-                } else if (results.length === 0) {
-                    res.status(404).send("Notification not found");
-                } else {
-                    res.status(200).send(results[0]);
-                }
-          });
-       } catch (error) {
-           return res.status(500).send(error);
-       }
+        await db.query(query, values, (err, result) => {
+            if (err) throw err;
+            console.log("1 record inserted");
+        })
     }
 
-    async deleteNotification(req, res) {
-       try {
-           const { id } = req.params;
-           const sql = "delete from notifications where notification_id=?";
-
-          db.query(sql, [id], (error, results) => {
-              this.getNotificationQuery(error, results, res);
-          });
-       } catch (error) {
-           return res.stauts(500).send(error);
-       }
+    async getAllNotifications() {
+        const sql = "select * from notifications";
+        const [rows] = await db.query(sql);
+        return rows as Notification[];
     }
 
-    getNotificationQuery(error, results, res) {
-        if (error) {
-            console.error(error);
-            res.status(500).send(error);
-        } else if (results.length === 0) {
-            res.status(404).send("Product not found");
-        } else {
-            res.status(200).send(results[0]);
-        }
+    async getNotificationById(id: number) {
+        const sql = "select * from notifications where notification_id = ?";
+        const [rows] = await db.query(sql, [id]);
+        return rows[0] as Notification;
+    }
+
+    async marAsRead(id: number) {
+        const sql = "update notifications set is_read = true where notification_id = ?";
+        await db.query(sql, [id]);
+    }
+
+    async deleteNotification(id: number) {
+        const sql = "delete from notifications where notification_id = ?";
+        await db.query(sql, [id]);
+    }
+
+    async closeConnection() {
+        await db.end();
     }
 }
 
