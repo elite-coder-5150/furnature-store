@@ -1,2 +1,5 @@
 config.codekit3
 README.html
+.idea
+.VSCodeCounter
+node_modules
