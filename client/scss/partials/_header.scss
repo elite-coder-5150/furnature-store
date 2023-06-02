@@ -4,33 +4,38 @@
 /***** 001 header styles *****/
 header {
     @include flex();
-    //flex-direction: row;
-
-    ul {
+    .primary {
         @include flex();
 
-        @include unstyled-list();
+        ul {
+            @include flex();
+            @include unstyled-list();
 
-        a {
-            @include reset-link();
-            @include text-size(18);
+            li {
+                text-transform: capitalize;
+                margin-right: 30px;
+                margin-bottom: 20px;
 
-            line-height: 35px;
-            text-transform: capitalize;
+                .sub-menu {
+                    display: none;
+                    flex-direction: column;
+                }
 
+                &:hover .sub-menu {
+                    @include flex();
+
+                    padding: 20px;
+                    border: 1px solid #D9D9D9;
+                }
+            }
+
+            a {
+                @include reset-link();
+            }
         }
-    }
+    } // .primary
 
     .secondary {
-        margin-left: auto;
-    }
-    .logo {
-        font-family: $base-font-family;
-        text-decoration: none;
 
-        @include text-size(32);
-        @include text-color(#265E55);
-
-        font-weight: bold;
-    }
+    } // .secondary
 }
