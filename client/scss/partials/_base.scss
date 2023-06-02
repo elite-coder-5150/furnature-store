@@ -16,5 +16,6 @@ body {
 
 .row {
     @include flex();
+    flex-direction: row;
 }
 
