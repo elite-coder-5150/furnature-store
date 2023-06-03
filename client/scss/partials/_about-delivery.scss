@@ -1,0 +1,14 @@
+@import "vars";
+@import "mixins";
+
+/***** 009 about-delivery *****/
+.about-delivery {
+    @include flex();
+    @include bg-color($clr-light-text);
+
+    .left {}
+
+    .right {
+        @include pull-right();
+    }
+}
