@@ -1,0 +1,12 @@
+@import "vars";
+@import "mixins";
+
+.newsletter-signup {
+    @include bg-color($clr-newsletter-bg);
+
+    .left {}
+
+    .right {
+        @include pull-right();
+    }
+}
