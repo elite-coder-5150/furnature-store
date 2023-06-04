@@ -1,0 +1,45 @@
+@import "vars";
+@import "mixins";
+
+.latest-blog-posts {
+    .section-title {
+        @include text-color($clr-dark-text);
+    }
+
+    .description {
+        @include text-color($clr-description);
+    }
+
+    .recent-blog-posts {
+        article {
+
+        }
+    }
+
+    .meta {
+        @include text-color($clr-description);
+
+        .blog-title {
+            @include text-color($clr-dark-text);
+        }
+
+        .blog-info {
+
+        }
+
+        .info-list {
+            @include unstyled-list();
+            @include flex();
+
+            li {
+                @include flex();
+            }
+            .name {
+                @include text-color($clr-description);
+            }
+            .date {
+                @include text-color($clr-description);
+            }
+        }
+    }
+}
