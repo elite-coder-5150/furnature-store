@@ -1,0 +1,10 @@
+@import "vars";
+@import "mixins";
+
+.new-products {
+    @include flex();
+
+    .product {
+        
+    }
+}
