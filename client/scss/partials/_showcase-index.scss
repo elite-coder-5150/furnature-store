@@ -1,0 +1,28 @@
+@import "vars";
+@import "mixins";
+
+.showcase-index {
+    @include bg-color($clr-showcase-index);
+    .sub-title {
+        text-transform: capitalize;
+
+        @include text-color($clr-sub-title-text);
+        @include font-family($base-font-family);
+        @include text-size(20);
+    }
+    .section-title {
+        font-weight: bold;
+
+        @include text-size(40);
+
+
+        .new-collection {
+            @include text-color($clr-primary);
+        }
+    }
+
+    .new-collection {
+        @include text-color($clr-primary);
+
+    }
+}
