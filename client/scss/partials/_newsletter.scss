@@ -4,7 +4,37 @@
 .newsletter-signup {
     @include bg-color($clr-newsletter-bg);
 
-    .left {}
+    .left {
+        @include flex();
+        @include flex-direction(column);
+
+        .sub-title {
+            text-transform: capitalize;
+
+            @include text-color($clr-dark-text);
+            @include text-size(14);
+        }
+
+        .section-title {
+            @include text-color($clr-dark-text);
+            @include text-size(32);
+        }
+
+        .description {
+            @include text-color($clr-dark-text);
+            @include text-size(14);
+        }
+
+        .services-list {
+            @include flex();
+            @include unstyled-list();
+
+            .service {
+                @include flex()
+            }
+        }
+    }
+
 
     .right {
         @include pull-right();
