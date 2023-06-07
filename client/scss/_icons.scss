@@ -49,3 +49,13 @@
     background: url('../img/star-icon.png') center center no-repeat;
     @include size(24, 24);
 }
+
+.admin-icon {
+    background: url('../img/index/admin-icon.png') center center no-repeat;
+    @include size(18, 18);
+}
+
+.calendar-icon {
+    background: url('../img/index/calander-icon.png') center center no-repeat;
+    @include size(18, 18);
+}
