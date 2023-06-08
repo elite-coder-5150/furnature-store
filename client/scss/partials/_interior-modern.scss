@@ -1,12 +1,17 @@
 @import "mixins";
 @import "vars";
+
 .interior-modern {
-    @include vertical-padding(20);
     background: $clr-interior-modern;
     margin-top: 115px;
+
+
+    /***** fixme: this fixed the border issue **** */
+    @include border(1, solid, darken($clr-interior-modern, 1%));
+
+    @include vertical-padding(20);
     @include flex();
 
-    @include border(1,  darken($clr-interior-modern, 15%));
     .left {
         padding-left: 75px;
         padding-top: 62px;
