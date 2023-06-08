@@ -9,47 +9,240 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <header>
-            <a href="index.html" class="logo">Future.</a>
-            <nav class="primary">
+<header>
+    <div class="container">
+
+        <div class="logo">
+            <a href="index.html" class="logo-link">Furniture</a>
+        </div>
+        <nav class="primary">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="shop.html">shop</a>
+                </li>
+                <li>
+                    <a href="blog.html">blog</a>
+                </li>
+                <li>
+                    <a href="#">page</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="single-blog-post.html">single blog post</a>
+                        </li>
+                        <li>
+                            <a href="checkout.html">checkout</a>
+                        </li>
+                        <li>
+                            <a href="cart.html">cart</a>
+                        </li>
+                        <li>
+                            <a href="login.html">login</a>
+                        </li>
+                        <li>
+                            <a href="register.html">register</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
+                        <li>
+                            <a href="wishlist.html">wishlist</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="secondary">
+            <ul>
+                <li>
+                    <div class="icon">
+                        <div class="search-icon"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon">
+                        <div class="profile-icon"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="icon">
+                        <div class="cart-icon"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="contact-info">
+    <div class="container">
+        <ul class="contact-info-list">
+            <li class="contact-info">
+                <div class="icon">
+                    <div class="email-icon"></div>
+                </div>
+            </li>
+
+            <li class="contact-info">
+                <div class="icon">
+                    <div class="phone-icon"></div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="social-list">
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <div class="instagram-icon"></div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <div class="twitter-icon"></div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <div class="tiktok-icon"></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="newsletter-signup">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <div class="title">Subscribe now and get 10% <br> all items</div>
+                <p class="description">
+                    Be the first to know about our latest products <br>
+                    and receive a special discount on your first order!
+                </p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Enter your email address">
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="right">
+                <img src="img/newsletter-img.png" alt="newsletter image">
+            </div>
+        </div>
+    </div>
+</section> <!-- end of .newsletter-signup -->
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="first-col">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo-link">Furniture</a>
+                </div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet litam consectetur adipiscing
+                    elit, facilisi vivamus proin lit laoreet
+                    phasel alilus porttitor inter, facilisis condiment
+                    tarime egestas rhoncus dapibus iaculis alemir.
+                </p>
+                <ul class="footer-social-list">
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <div class="instagram-icon"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <div class="twitter-icon"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <div class="tiktok-icon"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- end of .first-col -->
+
+            <div class="second-column">
+                <div class="col-title">Customer</div>
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="shop.html">shop</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">blog</a>
-                    </li>
-                    <li>
-                        <a href="#">pages</a>
+                    <li><a href="#">Order status</a></li>
+                    <li><a href="#">collections</a></li>
+                    <li><a href="#">our story</a></li>
+                    <li><a href="#">affiliates</a></li>
+                    <li><a href="#">security</a></li>
+                </ul>
+            </div> <!-- end of .second-column -->
 
+            <div class="third-col">
+                <div class="col-title">information</div>
+                <ul>
+                    <li><a href="#">customer service</a></li>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div> <!-- end of .third-col -->
+
+            <div class="follow-us-col">
+                <div class="col-title">Follow us</div>
+                <ul class="img-grid">
+                    <li>
+                        <img src="img/footer/img-one.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/footer/img-two.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/footer/img-three.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/footer/img-four.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/footer/img-five.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/footer/img-six.png" alt="">
                     </li>
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </div>
+</footer>
 
-            <nav class="secondary">
-                <ul class="tools">
-                    <li class="tool">
-                        <div class="icon">
-                            <div class="search-icon"></div>
-                        </div>
-                    </li>
-
-                    <li class="tool">
-                        <div class="icon">
-                            <div class="profile-icon"></div>
-                        </div>
-                    </li>
-
-                    <li class="tool">
-                        <div class="icon">
-                            <div class="cart-icon"></div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<div class="post-footer">
+    <div class="container">
+        <div class="row">
+            <div class="copy-right">
+                <p>&copy; Copyright 2023 Kaylios, All Right Reserved</p>
+            </div>
+            <ul class="utility-links">
+                <li><a href="#">terms of conditions</a></li>
+                <li><a href="#">privacy policy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
