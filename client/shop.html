@@ -11,74 +11,121 @@
     <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-<header>
-    <div class="container">
+<section class="top">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">Furniture</a>
+            </div>
+            <nav class="primary">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">shop</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">blog</a>
+                    </li>
+                    <li>
+                        <a href="#">page</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="single-blog-post.html">single blog post</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">checkout</a>
+                            </li>
+                            <li>
+                                <a href="cart.html">cart</a>
+                            </li>
+                            <li>
+                                <a href="login.html">login</a>
+                            </li>
+                            <li>
+                                <a href="register.html">register</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">contact</a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html">wishlist</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> <!-- end of .primary -->
 
-        <div class="logo">
-            <a href="index.html" class="logo-link">Furniture</a>
-        </div>
-        <nav class="primary">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
+            <nav class="secondary">
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <div class="search-icon"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon">
+                            <div class="profile-icon"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="icon">
+                            <div class="cart-icon"></div>
+                        </div>
+                    </li>
+                </ul>
+            </nav> <!-- end of .secondary -->
+        </div> <!-- end of .container -->
+    </header>
+
+    <section class="contact-info">
+        <div class="container">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <div class="icon">
+                        <div class="email-icon"></div>
+                    </div>
                 </li>
-                <li>
-                    <a href="shop.html">shop</a>
-                </li>
-                <li>
-                    <a href="blog.html">blog</a>
-                </li>
-                <li>
-                    <a href="#">page</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="single-blog-post.html">single blog post</a>
-                        </li>
-                        <li>
-                            <a href="checkout.html">checkout</a>
-                        </li>
-                        <li>
-                            <a href="cart.html">cart</a>
-                        </li>
-                        <li>
-                            <a href="login.html">login</a>
-                        </li>
-                        <li>
-                            <a href="register.html">register</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">contact</a>
-                        </li>
-                        <li>
-                            <a href="wishlist.html">wishlist</a>
-                        </li>
-                    </ul>
+
+                <li class="contact-info">
+                    <div class="icon">
+                        <div class="phone-icon"></div>
+                    </div>
                 </li>
             </ul>
-        </nav>
-        <nav class="secondary">
-            <ul>
+
+            <ul class="social-list">
                 <li>
-                    <div class="icon">
-                        <div class="search-icon"></div>
-                    </div>
+                    <a href="#">
+                        <div class="icon">
+                            <div class="instagram-icon"></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="icon">
-                        <div class="profile-icon"></div>
-                    </div>
+                    <a href="#">
+                        <div class="icon">
+                            <div class="twitter-icon"></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="icon">
-                        <div class="cart-icon"></div>
-                    </div>
+                    <a href="#">
+                        <div class="icon">
+                            <div class="tiktok-icon"></div>
+                        </div>
+                    </a>
                 </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+            </ul> <!-- end of social-list -->
+        </div> <!-- end of .container -->
+    </section> <!-- end of .contact-info -->
+</section> <!-- end of .top -->
+
 
 <section class="main-content">
     <div class="container">
@@ -87,16 +134,350 @@
                 <div class="widget-title">Filter by price</div>
                 <div class="start">
                     <label for="start-price"></label>
-                    <input type="text"  id="start-price"class="start-price" placeholder="$0">
+                    <input type="text" id="start-price" class="start-price" placeholder="$0">
                 </div>
                 <div class="end">
                     <label for="end-price"></label>
-                    <input type="text"  id="end-price"class="end-price" placeholder="$1000">
+                    <input type="text" id="end-price" class="end-price" placeholder="$1000">
+                </div>
+            </div> <!-- end of .widget -->
+
+            <div class="widget">
+                <div class="widget-title">Filter by color</div>
+                <ul class="color-list">
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #000000"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #ffffff"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #ff0000"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #00ff00"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #0000ff"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #ffff00"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #00ffff"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="color-item" style="background-color: #ff00ff"></a>
+                    </li>
+                </ul> <!-- end of .color-list -->
+            </div> <!-- end of .widget -->
+
+            <div class="widget">
+                <div class="widget-title">Product by category</div>
+                <ul class="category-list">
+                    <li><a href="#">Char</a><span class="number">9</span></li>
+                    <li><a href="#">lamp</a><span class="number">10</span></li>
+                    <li><a href="#">sofa</a><span class="number">12</span></li>
+                    <li><a href="#">table</a><span class="number">12</span></li>
+                    <li><a href="#">clock</a><span class="number">5</span></li>
+                    <li><a href="#">pillow</a><span class="number">7</span></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <div class="widget-title">Product Tags</div>
+                <ul class="tags">
+                    <li class="tag active">chair</li>
+                    <li class="tag">lamp</li>
+                    <li class="tag">minimalist</li>
+                    <li class="tag">sofa</li>
+                    <li class="tag">new</li>
+                    <li class="tag">clock</li>
+                    <li class="tag">pillow</li>
+                </ul>
+            </div>
+        </div> <!-- end of .filters -->
+
+        <div class="main">
+            <div class="search-container">
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="search"></label>
+                        <input type="text" id="search" placeholder="Search">
+                        <button class="md-primary">search</button>
+                    </div>
+                </form>
+                <!-- q: any issues in this file? -->
+                <!-- a:  -->
+            </div> <!-- end of .search-container -->
+            <div class="sort-by">
+                sort by
+                <div class="icon">
+                    <div class="down-arrow"></div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+            <div class="drop-down">
+                <ul class="filters">
+                    <li class="filter">
+                        <a href="#">featured</a>
+                    </li>
+                    <li class="filter">
+                        <a href="#">newest</a>
+                    </li>
+                    <li class="filter">
+                        <a href="#">popular</a>
+                    </li>
+                    <li class="filter">
+                        <a href="#">price high - low</a>
+                    </li>
+                    <li class="filter">
+                        <a href="#">price low - high</a>
+                    </li>
+                </ul> <!-- end of .filters -->
+            </div> <!-- end of .drop-down -->
+            <div class="product-grid">
+                <ul class="product-list">
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-one.png" alt="">
+                            </div> <!-- end of .product-img -->
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-one.png" alt="">
+                            </div> <!-- end of .product-img -->
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-one.png" alt="">
+                            </div> <!-- end of .product-img -->
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-one.png" alt="">
+                            </div> <!-- end of .product-img -->
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+                </ul> <!-- end of .product-list -->
+
+                <ul class="product-list">
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-two.png" alt="">
+                            </div> <!-- end of .product-img -->
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-three.png" alt="">
+                            </div> <!-- end of .product-img -->
+
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-three.png" alt="">
+                            </div> <!-- end of .product-img -->
+
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+
+                    <li class="product">
+                        <div class=overlay">
+                            <div class="product-img">
+                                <img src="img/products-index-page/product-img-three.png" alt="">
+                            </div> <!-- end of .product-img -->
+
+                            <div class="product-info">
+                                <div class="new-badge">new</div>
+                                <ul class="utility-list">
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="like-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+
+                                    <li class="list-item">
+                                        <div class="icon">
+                                            <div class="small-cart-icon"></div>
+                                        </div>
+                                    </li> <!-- end of .list-item -->
+                                </ul> <!-- end of .utility-list -->
+                                <div class="badge living-room">living room</div>
+                                <div class="name-and-price">
+                                    <div class="product-name">teak wood chair</div>
+                                    <div class="product-price">$ 120</div>
+                                </div> <!-- end of .name-and-price -->
+                            </div> <!-- end of .product-info -->
+                        </div> <!-- end of .overlay -->
+                    </li> <!-- end of .product -->
+                </ul> <!-- end of .product-list -->
+            </div> <!-- end of .product-grid -->
+        </div> <!-- end of .main -->
+    </div> <!-- end of .container -->
+</section> <!-- end of .main-content -->
 
 <section class="newsletter-signup">
     <div class="container">
@@ -122,102 +503,106 @@
     </div>
 </section> <!-- end of .newsletter-signup -->
 
-<footer class="main-footer">
-    <div class="container">
-        <div class="row">
-            <div class="first-col">
-                <div class="footer-logo">
-                    <a href="index.html" class="logo-link">Furniture</a>
+<section class="bottom">
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="first-col">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">Furniture</a>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet litam consectetur adipiscing
+                        elit, facilisi vivamus proin lit laoreet
+                        phasel alilus porttitor inter, facilisis condiment
+                        tarime egestas rhoncus dapibus iaculis alemir.
+                    </p>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="instagram-icon"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="twitter-icon"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <div class="tiktok-icon"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- end of .first-col -->
+
+                <div class="second-column">
+                    <div class="col-title">Customer</div>
+                    <ul>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">collections</a></li>
+                        <li><a href="#">our story</a></li>
+                        <li><a href="#">affiliates</a></li>
+                        <li><a href="#">security</a></li>
+                    </ul>
+                </div> <!-- end of .second-column -->
+
+                <div class="third-col">
+                    <div class="col-title">information</div>
+                    <ul>
+                        <li><a href="#">customer service</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div> <!-- end of .third-col -->
+
+                <div class="follow-us-col">
+                    <div class="col-title">Follow us</div>
+                    <ul class="img-grid">
+                        <li>
+                            <img src="img/footer/img-one.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/footer/img-two.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/footer/img-three.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/footer/img-four.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/footer/img-five.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/footer/img-six.png" alt="">
+                        </li>
+                    </ul>
                 </div>
-                <p class="description">
-                    Lorem ipsum dolor sit amet litam consectetur adipiscing
-                    elit, facilisi vivamus proin lit laoreet
-                    phasel alilus porttitor inter, facilisis condiment
-                    tarime egestas rhoncus dapibus iaculis alemir.
-                </p>
-                <ul class="footer-social-list">
-                    <li>
-                        <a href="#">
-                            <div class="icon">
-                                <div class="instagram-icon"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="icon">
-                                <div class="twitter-icon"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="icon">
-                                <div class="tiktok-icon"></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div> <!-- end of .first-col -->
+            </div>
+        </div>
+    </footer> <!-- end of .main-footer -->
 
-            <div class="second-column">
-                <div class="col-title">Customer</div>
-                <ul>
-                    <li><a href="#">Order status</a></li>
-                    <li><a href="#">collections</a></li>
-                    <li><a href="#">our story</a></li>
-                    <li><a href="#">affiliates</a></li>
-                    <li><a href="#">security</a></li>
-                </ul>
-            </div> <!-- end of .second-column -->
-
-            <div class="third-col">
-                <div class="col-title">information</div>
-                <ul>
-                    <li><a href="#">customer service</a></li>
-                    <li><a href="#">careers</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div> <!-- end of .third-col -->
-
-            <div class="follow-us-col">
-                <div class="col-title">Follow us</div>
-                <ul class="img-grid">
-                    <li>
-                        <img src="img/footer/img-one.png" alt="">
-                    </li>
-                    <li>
-                        <img src="img/footer/img-two.png" alt="">
-                    </li>
-                    <li>
-                        <img src="img/footer/img-three.png" alt="">
-                    </li>
-                    <li>
-                        <img src="img/footer/img-four.png" alt="">
-                    </li>
-                    <li>
-                        <img src="img/footer/img-five.png" alt="">
-                    </li>
-                    <li>
-                        <img src="img/footer/img-six.png" alt="">
-                    </li>
+    <div class="post-footer">
+        <div class="container">
+            <div class="row">
+                <div class="copy-right">
+                    <p>&copy; Copyright 2023 Kaylios, All Right Reserved</p>
+                </div>
+                <ul class="utility-links">
+                    <li><a href="#">terms of conditions</a></li>
+                    <li><a href="#">privacy policy</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-</footer>
-<div class="post-footer">
-    <div class="container">
-        <div class="row">
-            <div class="copy-right">
-                <p>&copy; Copyright 2023 Kaylios, All Right Reserved</p>
-            </div>
-            <ul class="utility-links">
-                <li><a href="#">terms of conditions</a></li>
-                <li><a href="#">privacy policy</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+    </div> <!-- end of .post-footer -->
+</section> <!-- end of .bottom -->
+
 </body>
 </html>
