@@ -85,10 +85,14 @@
     }
 }
 
-@mixin border($size, $color) {
-    border: $size solid $color;
-}
+//@mixin border($size, $color) {
+//    border: $size solid $color;
+//}
 
+// todo: this fixed the error.
+@mixin border($size, $type, $color) {
+    border: px-to-rem($size) $type $color;
+}
 @mixin border-radius($radius) {
     border-radius: px-to-rem($radius);
 }
