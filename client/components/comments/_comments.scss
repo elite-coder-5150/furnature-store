@@ -1,0 +1,6 @@
+@import "../../scss/partials/_vars.scss";
+@import "../../scss/partials/_mixins.scss";
+
+.comments {
+    @include flex();
+}
